@@ -998,49 +998,95 @@ input[type="date"] {
 
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .forms-busqueda {
-        grid-template-columns: 1fr;
-    }
-
-    .contenido-principal {
-        padding-top: 150px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
+/* Adaptación adicional para móviles pequeños */
+@media (max-width: 480px) {
     header {
-        padding: 20px 20px;
-    }
-
-    header .logo {
-        font-size: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+        gap: 10px;
     }
 
     .nav-list {
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-start;
+        gap: 8px;
     }
 
     .inicio,
-    .destinos,
-    .viajes,
+    .conocenos,
     .hoteles {
-        padding: 10px 20px;
-        font-size: 14px;
-        margin: 5px;
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .showcase {
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    .contenido-principal {
+        padding: 100px 20px 30px;
+    }
+
+    .contenedor-principal {
+        padding: 1.5rem;
     }
 
     .titulo-principal {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
-    .features-grid {
+    .subtitulo-principal {
+        font-size: 1rem;
+    }
+
+    .forms-busqueda,
+    .forms-pago {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .btn-buscar,
+    .cssbuttons-io-button {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .flashcard {
+        height: auto;
+        min-height: 180px;
+    }
+
+    .flashcard__title {
+        font-size: 18px;
+    }
+
+    .flashcard__description {
+        font-size: 13px;
     }
 
     .airlines-grid {
-        gap: 1rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .airline-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .flip-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .flip-card-inner {
+        height: 200px;
     }
 }
