@@ -114,8 +114,16 @@ header .logo {
 
 /* El fondo igual que el video del index*/
 body {
-    background: black;
+    background-image: url("../Images/fondo-hotel-html.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .showcase {
@@ -136,9 +144,14 @@ body {
     right: 300px;
 }
 
-
-
-
+/*Titulo del contenedor principal*/
+.titulo-seccion {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 /*Contendor pricipal dentro van los hoteles*/
 .hoteles-contenedor {
@@ -149,14 +162,7 @@ body {
     z-index: 2;
 
 }
-/*Titulo del contenedor principal*/
-.titulo-seccion {
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
+
 
 /*Seccion donde estan todos los hoteles*/
 .viajes-grid {
