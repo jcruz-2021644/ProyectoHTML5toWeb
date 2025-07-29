@@ -1,9 +1,22 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI';
+}
+
+body {
+    background-image: url("../Images/fondo-hotel-html.png");
+    /* Verifica la ruta */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -23,7 +36,7 @@ header .logo {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 50px;
-    font-weight: 50px;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -32,18 +45,7 @@ header .logo {
     color: inherit;
 }
 
-.logo:active {
-    letter-spacing: 0.4px;
-    transition: 0.1s all;
-    transform: translateY(-5px);
-    background: transparent;
-    color: white;
-    text-decoration: none;
-}
-
-
 .container {
-    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,8 +55,6 @@ header .logo {
     list-style: none;
     display: flex;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
     padding: 0;
     margin: 0;
 }
@@ -65,92 +65,41 @@ header .logo {
 .hoteles {
     background-color: transparent;
     padding: 15px 35px;
-    margin: 10px;
     font-size: 18px;
-    font-weight: 500;
-    border-radius: 15px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 2px;
-    cursor: pointer;
-    border-radius: 10px;
     border: 3px dashed transparent;
-    box-shadow: transparent 0px 2px 5px -1px, transparent 0px 1px 3px -1px;
     transition: .4s;
-}
-
-.inicio span:last-child,
-.conocenos span:last-child,
-.viajes span:last-child,
-.hoteles span:last-child {
-    display: none;
 }
 
 .inicio:hover,
 .conocenos:hover,
 .viajes:hover,
 .hoteles:hover {
-    transition: .4s;
     border: 3px dashed #c09340c5;
     background-color: #fff;
     color: #b8821fa1;
 }
 
-.inicio:active,
-.destinos:active,
-.viajes:active,
-.hoteles:active {
-    letter-spacing: 0.4px;
-    transition: 0.1s all;
-    transform: translateY(-10px);
-    background: transparent;
-    color: white;
-}
-
-
-
-
-/* El fondo igual que el video del index*/
-body {
-    background-image: url("../Images/fondo-hotel-html.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 .showcase {
-    position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background: transparent;
-    transition: 0.5s;
-    z-index: 2;
-
 }
 
-.showcase.active {
-    right: 300px;
-}
-
-/*Titulo del contenedor principal*/
 .titulo-seccion {
     text-align: center;
     color: white;
     font-size: 3rem;
     margin-bottom: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 /*Contendor pricipal dentro van los hoteles*/
@@ -254,6 +203,7 @@ body {
     gap: 10px;
     z-index: 10;
 }
+
 /*Los puuntos para mover la imagen*/
 .nav-dot {
     cursor: pointer;
@@ -298,6 +248,7 @@ body {
     gap: 10px;
     margin-bottom: 15px;
 }
+
 /*Letra de los tag de arriba del raiting*/
 .feature-tag {
     background: #e8f5e8;
@@ -307,6 +258,7 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
 }
+
 /*ejemplo el me queda 1.hab*/
 .availability-tag {
     background: #d4edda;
@@ -326,6 +278,7 @@ body {
     gap: 10px;
     margin-bottom: 15px;
 }
+
 /*El raiting*/
 .rating-score {
     background: #27ae60;
@@ -355,12 +308,14 @@ body {
     gap: 6px;
     align-self: flex-end;
 }
+
 /*Precio pequeño arriba del grande*/
 .price-per-night {
     color: #7f8c8d;
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
+
 /*Precio grande*/
 .price-current {
     font-size: 1.8rem;
@@ -374,6 +329,7 @@ body {
     color: #7f8c8d;
     font-size: 0.85rem;
 }
+
 /*Info abajo del precio total*/
 .total-info {
     position: relative;
